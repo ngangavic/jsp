@@ -13,5 +13,9 @@
     </head>
     <body>
         <h1>Hello World!</h1>
+        <form name="Name Input Form" action="response.jsp">
+            <input type="text" name="name" />
+            <input type="submit" value="OK" />
+        </form>
     </body>
 </html>
