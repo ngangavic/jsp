@@ -1,5 +1,7 @@
+
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -12,11 +14,21 @@ public class Login extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             response.setContentType("text/html");
-          
-            String name = request.getParameter("uname");//will return value  
-            out.println("Welcome " + name);
 
-            out.close();
+            String name = request.getParameter("uname");//will return value
+            String password = request.getParameter("pword");
+            if (password.equals("servlet")) {
+                RequestDispatcher rd = request.getRequestDispatcher("WelcomeServlet");
+                rd.forward(request, response);
+            } else {
+                out.print("Sorry UserName or Password Error!");
+                RequestDispatcher rd = request.getRequestDispatcher("/index.html");
+                rd.include(request, response);
+
+            }
+//            out.println("Welcome " + name);
+
+//            out.close();
         }
     }
 
