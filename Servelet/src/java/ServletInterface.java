@@ -13,7 +13,7 @@ public class ServletInterface implements Servlet {
 
     @Override
     public String getServletInfo() {
-        return "Copyright .gitignore 2020";
+        return "Copyright 2020 .gitignore";
     }
 
     @Override
