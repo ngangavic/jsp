@@ -11,7 +11,7 @@ public class GoogleSearch extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String text=request.getParameter("text");  
-        response.sendRedirect("https://www.google.co.in/#q="+text);  
+        response.sendRedirect("https://www.google.co.ke/#q="+text);  
     }
 
     @Override
