@@ -8,6 +8,14 @@
         <servlet-name>Cookie2</servlet-name>
         <servlet-class>Cookie2</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Sessions1</servlet-name>
+        <servlet-class>Sessions1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Sessions2</servlet-name>
+        <servlet-class>Sessions2</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Cookie1</servlet-name>
         <url-pattern>/Cookie1</url-pattern>
@@ -15,6 +23,14 @@
     <servlet-mapping>
         <servlet-name>Cookie2</servlet-name>
         <url-pattern>/Cookie2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Sessions1</servlet-name>
+        <url-pattern>/Sessions1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Sessions2</servlet-name>
+        <url-pattern>/Sessions2</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
