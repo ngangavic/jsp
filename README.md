@@ -1,5 +1,5 @@
 # jsp
-Java Server pages, Spring boot MVC learning
+Java Server pages,Servlets, Spring boot MVC learning
 
 #### Sites using
 1. https://www.guru99.com/jsp-tutorial.html.
