@@ -30,7 +30,7 @@ public class EditServlet2 extends HttpServlet {
             if (status > 0) {
                 response.sendRedirect("ViewServlet");
             } else {
-                out.println("Sorry! unable to update record");
+                out.print("<div class='alert alert-success' style='text-align:center'><strong>Sorry! unable to save record</strong></div>");
             }
 
             out.close();
