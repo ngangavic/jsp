@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -15,26 +10,26 @@ and open the template in the editor.
     <body>
         <div class="container">
             <div class="col-xs-12 col-sm-12 col-md-6 offset-md-3 col-lg-6">
-                <h1>Add New Employee</h1>  
+                <h1 style="text-align: center">Add New Employee</h1>  
                 <form action="SaveServlet" method="post">  
-                    <table class="table">  
-                        <tr><td>Name:</td><td><input type="text" name="name"/></td></tr>  
-                        <tr><td>Password:</td><td><input type="password" name="password"/></td></tr>  
-                        <tr><td>Email:</td><td><input type="email" name="email"/></td></tr>  
-                        <tr><td>Country:</td><td>  
-                                <select name="country" style="width:150px">  
-                                    <option>India</option>  
-                                    <option>USA</option>  
-                                    <option>UK</option>  
-                                    <option>Other</option>  
-                                </select>  
-                            </td></tr>  
-                        <tr><td colspan="2"><input type="submit" value="Save Employee"/></td></tr>  
-                    </table>  
+
+                    <div class="form-group">Name:<input type="text" name="name" class="form-control" /></div>  
+                    <div class="form-group">Password:<input type="password" name="password" class="form-control" /></div>  
+                    <div class="form-group">Email:<input type="email" name="email" class="form-control" /></div>
+                    <div class="form-group">Country:
+                        <select name="country" class="form-control">  
+                            <option>Kenya</option>  
+                            <option>Uganda</option>  
+                            <option>Tanzania</option>  
+                            <option>Other</option>  
+                        </select>  
+                    </div>  
+                    <div class="form-group"><input type="submit" value="Save Employee" class="btn btn-block btn-primary"/></div>  
+
                 </form>  
 
                 <br/>  
-                <a href="ViewServlet">view employees</a>  
+                <a href="ViewServlet" class="btn btn-sm btn-success">View Employees</a>  
 
             </div>
         </div>
