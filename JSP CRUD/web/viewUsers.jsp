@@ -1,6 +1,7 @@
 <%@page import="models.User"%>
 <%@page import="actions.DbActions,java.util.*"%>  
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>  
+<%@ page errorPage="error.jsp" %>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -40,8 +41,8 @@
                     <td>${u.getEmail()}</td>
                     <td>${u.getGender()}</td>
                     <td>${u.getCountry()}</td>  
-                    <td><a href="editform.jsp?id=${u.getId()}" class="btn btn-sm btn-warning">Edit</a></td>  
-                    <td><a href="deleteuser.jsp?id=${u.getId()}" class="btn btn-sm btn-danger">Delete</a></td></tr>  
+                    <td><a href="editForm.jsp?id=${u.getId()}" class="btn btn-sm btn-warning">Edit</a></td>  
+                    <td><a href="deleteUser.jsp?id=${u.getId()}" class="btn btn-sm btn-danger">Delete</a></td></tr>  
                 </c:forEach>  
         </table>  
         <br/><a href="addUserForm.jsp" class="btn btn-success">Add New User</a>
