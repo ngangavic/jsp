@@ -14,7 +14,7 @@
                 <h3 style="text-align: center">JSP CRUD application</h3>
                 <div class="btn btn-group col-sm-12 col-xs-12 col-md-6 col-lg-6 offset-md-3" >
                     <a href="addUserForm.jsp" class="btn btn-success">Add User</a>
-                <a href="#" class="btn btn-warning">View Users</a>
+                    <a href="viewUsers.jsp" class="btn btn-warning">View Users</a>
                 </div>
             </div>
         </div>
